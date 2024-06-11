@@ -6,18 +6,28 @@ Esta es la configuración que tengo para NeoVim.
 
 Instalación de NeoVim:
 
-GNU/Linux
-Arch Linux `sudo pacman -Syu neovim`
+- GNU/Linux
+Arch Linux
+```bash
+sudo pacman -Syu neovim
+```
 
-Instalar dependencias y paquetes necesarios:
+Instalar paquetes necesarios:
 
-Arch Linux `sudo pacman -Syu nodejs npm`
+- Arch Linux 
+```bash
+sudo pacman -Syu nodejs npm
+```
 
 - Cambia al directorio de `.config`.
-`cd ~/.config`
+```bash
+cd ~/.config
+```
 
 - Clonar el repositorio de la Configuración.
-`git clone "https://github.com/anderon-2201/nvim"`
+```bash
+git clone "https://github.com/anderon-2201/nvim"
+```
 
 Ejecuta `nvim` en tu terminal o lanzador de aplicaciones.
 
@@ -25,15 +35,33 @@ En NeoVim presiona `:` escribe `PlugInstall` y presiona Enter.
 
 Ejecuta `:` escribe `quit` y presiona Enter.
 
-Cambia al directorio `~/.config/nvim/vim-plug.coc.nvim` y ejecuta.
-`npm ci`
+- Cambia al directorio.
+```bash
+~/.config/nvim/vim-plug/coc.nvim
+```
+
+- Y ejecuta.
+```bash
+npm ci
+```
 
 > [!WARNING]
-> Si en dado caso aparece error:
-> Ejecuta `npm audit fix` y vuelva a ejecutar `npm ci` nuevamente
+> Si en dado caso aparece error de `high severity vulnerability`:
+> - Ejecuta el siguiente comando.
+```bash
+npm audit fix
+```
+> y vuelva a ejecutar `npm ci` nuevamente
 
-Ahora ejecuta `nvim` para instalar con `:CocInstall coc-clangd` y `:CocInstall coc-python` para el autocompletado para los lenguajes C y Python.
+Ahora ejecuta `nvim` para instalar con.
+```bash
+:CocInstall coc-clangd
+```
+```bash
+:CocInstall coc-python
+```
+Para el autocompletado para los lenguajes C y Python.
 
-POr ultimo, ejecuta `:TransparentEnable` para que NeoVim sea transparente.
+Por ultimo, ejecuta `:TransparentEnable` para que NeoVim tenga fondo transparente.
 
 ¡Y listo!
