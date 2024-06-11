@@ -47,11 +47,7 @@ npm ci
 
 > [!WARNING]
 > Si en dado caso aparece error de `high severity vulnerability`:
-> - Ejecuta el siguiente comando.
-```bash
-npm audit fix
-```
-> y vuelva a ejecutar `npm ci` nuevamente
+> - Ejecuta el siguiente comando `npm audit fix` y vuelva a ejecutar `npm ci` nuevamente
 
 Ahora ejecuta `nvim` para instalar con.
 ```bash
